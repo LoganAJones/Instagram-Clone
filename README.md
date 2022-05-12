@@ -1,3 +1,20 @@
+# Instagram Clone
+
+This is a ground up Instagram clone made using Next.Js, Tailwind CSS, Firebase v9, NextAuth, Recoil)
+
+## Run the Application
+
+Use the package manager [npm](https://www.npmjs.com/) to install npm.
+
+To run the application use
+```bash
+npm install
+```
+Then 
+```
+npm run dev
+```
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
