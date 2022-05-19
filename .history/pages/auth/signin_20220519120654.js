@@ -15,9 +15,11 @@ export default function SignIn({ providers }) {
 }
 
 //server side render
+
 export async function getServerSideProps(context) {
   const providers = await getProviders()
   return {
     props: { providers },
   }
 }
+export default signIn

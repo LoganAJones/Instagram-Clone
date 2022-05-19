@@ -21,3 +21,4 @@ export async function getServerSideProps(context) {
     props: { providers },
   }
 }
+export default signIn
