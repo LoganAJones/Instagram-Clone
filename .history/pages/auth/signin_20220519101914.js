@@ -3,10 +3,10 @@ import {getProviders, signIn as SignIntoProvider} from "next-auth/react"
 
 //Browser...
 function signIn({ providers }) {
-  
   return (
     <>
-      {Object.values(providers).map((provider) => (
+      {Object.values(providers).map((provider) 
+      => (
         <div key={provider.name}>
           <button onClick={() => SignIntoProvider(provider.id)}>
             Sign in with {provider.name}
@@ -23,7 +23,7 @@ export async function getServerSideProps () {
 
     return {
       props: {
-        providers,
+        providers
       },
     }
 }

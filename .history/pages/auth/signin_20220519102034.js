@@ -3,7 +3,6 @@ import {getProviders, signIn as SignIntoProvider} from "next-auth/react"
 
 //Browser...
 function signIn({ providers }) {
-  
   return (
     <>
       {Object.values(providers).map((provider) => (
@@ -23,7 +22,7 @@ export async function getServerSideProps () {
 
     return {
       props: {
-        providers,
+        providers
       },
     }
 }

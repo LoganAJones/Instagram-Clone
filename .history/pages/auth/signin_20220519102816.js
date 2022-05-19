@@ -3,7 +3,14 @@ import {getProviders, signIn as SignIntoProvider} from "next-auth/react"
 
 //Browser...
 function signIn({ providers }) {
-  
+  const [providers, setProviders] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      const res = await getProviders();
+      setProviders(res);
+    })();
+  }, []);
   return (
     <>
       {Object.values(providers).map((provider) => (
